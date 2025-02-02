@@ -2,6 +2,8 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { ShoppingCart } from 'lucide-react';
 import Monstera from "./assets/Monstera.jpg"; // Import the image
+import outdoorPlant from "./assets/outdoorPlant.png"; // Import the image
+import indoorPlant from "./assets/indoorPlant.png"; // Import the image
 
 const PlantShop = () => {
   return (
@@ -81,7 +83,7 @@ const PlantShop = () => {
                 <p className="text-success fw-bold fs-4">$30.00</p>
               </div>
               <img
-                src="/api/placeholder/200/200"
+                src={outdoorPlant}
                 alt="Outdoor plant"
                 className="img-fluid rounded"
                 style={{ width: '200px', height: '200px', objectFit: 'cover' }}
@@ -101,7 +103,7 @@ const PlantShop = () => {
                 <p className="text-success fw-bold fs-4">$20.00</p>
               </div>
               <img
-                src="/api/placeholder/200/200"
+                src= {indoorPlant}
                 alt="Indoor plant"
                 className="img-fluid rounded"
                 style={{ width: '200px', height: '200px', objectFit: 'cover' }}

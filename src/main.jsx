@@ -1,0 +1,11 @@
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import './index.css'
+//import App from './PlantShop.jsx'
+import PlantShop from './PlantShop.jsx'
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <PlantShop />
+  </StrictMode>,
+)

@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { ShoppingCart } from 'lucide-react';
+import Monstera from "./assets/Monstera.jpg"; // Import the image
 
 const PlantShop = () => {
   return (
@@ -54,11 +55,8 @@ const PlantShop = () => {
             </button>
           </div>
           <div className="col-md-6 position-relative">
-            <img 
-              src="/api/placeholder/600/400"
-              alt="Monstera plant in white pot"
-              className="img-fluid rounded"
-            />
+          <img src={Monstera} alt="Monstera plant in white pot" className="img-fluid rounded" />
+
             <div className="position-absolute bottom-0 start-0 m-4 bg-white p-3 rounded shadow">
               <small className="text-muted">Next</small>
               <h6 className="mb-0">Plant Pleasure</h6>

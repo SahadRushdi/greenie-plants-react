@@ -55,7 +55,7 @@ const PlantShop = () => {
             </button>
           </div>
           <div className="col-md-6 position-relative">
-          <img src={Monstera} alt="Monstera plant in white pot" className="img-fluid rounded" />
+            <img src={Monstera} alt="Monstera plant in white pot" className="img-fluid rounded" />
 
             <div className="position-absolute bottom-0 start-0 m-4 bg-white p-3 rounded shadow">
               <small className="text-muted">Next</small>
@@ -80,7 +80,7 @@ const PlantShop = () => {
                 </p>
                 <p className="text-success fw-bold fs-4">$30.00</p>
               </div>
-              <img 
+              <img
                 src="/api/placeholder/200/200"
                 alt="Outdoor plant"
                 className="img-fluid rounded"
@@ -100,7 +100,7 @@ const PlantShop = () => {
                 </p>
                 <p className="text-success fw-bold fs-4">$20.00</p>
               </div>
-              <img 
+              <img
                 src="/api/placeholder/200/200"
                 alt="Indoor plant"
                 className="img-fluid rounded"

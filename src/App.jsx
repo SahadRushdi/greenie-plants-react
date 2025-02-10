@@ -1,21 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { Route } from 'lucide-react'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import PlantShop from "./PlantShop";
+import Products from "./pages/Products";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-    
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/products" element={<Product />} />
-    </Routes>
-    </>
-  )
-}
+    <Router>
+      <Routes>
+        <Route path="/" element={<PlantShop />} />
+        <Route path="/products" element={<Products />} />
+      </Routes>
+    </Router>
+  );
+};
 
-export default App
+export default App;

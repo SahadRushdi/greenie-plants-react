@@ -1,11 +1,14 @@
-import React from 'react';
+import React from "react";
+import { useNavigate } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { ShoppingCart } from 'lucide-react';
-import Monstera from "./assets/Monstera.jpg"; // Import the image
-import outdoorPlant from "./assets/outdoorPlant.png"; // Import the image
-import indoorPlant from "./assets/indoorPlant.png"; // Import the image
+import Monstera from "./assets/Monstera.jpg";
+import outdoorPlant from "./assets/outdoorPlant.png";
+import indoorPlant from "./assets/indoorPlant.png";
 
 const PlantShop = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="min-vh-100">
       {/* Navigation */}
@@ -21,7 +24,9 @@ const PlantShop = () => {
                 <a className="nav-link" href="#">Home</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Product</a>
+                <button className="nav-link btn btn-link text-decoration-none" onClick={() => navigate("/products")}>
+                  Product
+                </button>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">Contact Us</a>
@@ -58,7 +63,6 @@ const PlantShop = () => {
           </div>
           <div className="col-md-6 position-relative">
             <img src={Monstera} alt="Monstera plant in white pot" className="img-fluid rounded" />
-
             <div className="position-absolute bottom-0 start-0 m-4 bg-white p-3 rounded shadow">
               <small className="text-muted">Next</small>
               <h6 className="mb-0">Plant Pleasure</h6>
@@ -67,7 +71,6 @@ const PlantShop = () => {
           </div>
         </div>
       </div>
-
       {/* Products Section */}
       <div className="container py-5">
         <div className="row g-4">
@@ -76,7 +79,7 @@ const PlantShop = () => {
             <div className="d-flex align-items-center gap-4">
               <div>
                 <p className="text-success mb-2">Outdoors</p>
-                <h3 className="h4 fw-bold mb-2">Lorem Plants Name</h3>
+                <h3 className="h4 fw-bold mb-2">Laurus Nobils</h3>
                 <p className="text-muted mb-3">
                   Shop your favourite plants in your favorable factor, Veggies, Seeds, Citrus Lorem ipsum dolor.
                 </p>
@@ -96,14 +99,14 @@ const PlantShop = () => {
             <div className="d-flex align-items-center gap-4">
               <div>
                 <p className="text-success mb-2">Indoors</p>
-                <h3 className="h4 fw-bold mb-2">Lorem Plants Name</h3>
+                <h3 className="h4 fw-bold mb-2">Swiss Chesse Plant</h3>
                 <p className="text-muted mb-3">
                   Shop your favourite plants in your favorable factor, Veggies, Seeds, Citrus Lorem ipsum dolor.
                 </p>
                 <p className="text-success fw-bold fs-4">$20.00</p>
               </div>
               <img
-                src= {indoorPlant}
+                src={indoorPlant}
                 alt="Indoor plant"
                 className="img-fluid rounded"
                 style={{ width: '200px', height: '200px', objectFit: 'cover' }}
